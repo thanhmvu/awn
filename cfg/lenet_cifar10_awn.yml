@@ -1,0 +1,90 @@
+# =========================== Basic Settings ===========================
+# machine info
+num_gpus_per_job: 1
+num_cpus_per_job: #
+memory_per_job: #
+gpu_type: "nvidia-gtx-1080"
+
+# experiment
+experiment: #
+log_dir: ./logs
+seed: 2019
+
+# data
+dataset: cifar10
+num_classes: 10
+image_size: 32
+image_channels: 3
+data_dir: ./data/cifar10
+data_transforms: cifar10
+data_loader: cifar10
+data_loader_workers: 4
+drop_last: False
+
+# model
+model_name: AWLeNet5
+module_name: models.aw_lenet5
+model_init_width_mult: 1.0
+model_width_mults: [1.0]
+
+model_profiling: [gpu]
+model_profiling_verbose: True
+
+# training
+train_width_mults: [1.0, 0.75, 0.5, 0.25]
+
+optimizer: sgd
+momentum: 0.9
+weight_decay: 0.0005
+nesterov: False
+depthwise: False
+
+lr: 0.1
+lr_scheduler: multistep
+lr_scheduler_params:
+    multistep_lr_milestones: [.5, .75]
+    multistep_lr_gamma: 0.1
+
+num_epochs: 200
+train_batch_size: 256
+val_batch_size: 1000
+topk: [1, 5]
+
+log_interval: 100
+save_interval: 5000
+
+test_only: False
+pretrained: ''
+resume: ''
+
+depthwise: False
+use_tensorboard: False
+saving_checkpoint: True
+tracking_bn_stats: True
+tria_min_width_mult: #
+
+# =========================== Override Settings ===========================
+num_epochs: 100
+train_batch_size: 128
+saving_checkpoint: True
+depthwise: False
+
+optimizer: sgd
+lr: 0.01
+momentum: 0.9
+lr_scheduler: multistep
+lr_scheduler_params:
+    multistep_lr_milestones: [.5, .75]
+    multistep_lr_gamma: 0.1
+
+model_name: TriaConv_AWLeNet5
+experiment: lenet_cifar10_awn
+model_init_width_mult: 1.4142
+model_width_mults: [1.0]
+train_width_mults: [1.0, 0.75, 0.5, 0.25]
+#
+#
+#
+#
+
+# test_only: True ## Uncomment this line to run inference
