@@ -1,6 +1,7 @@
 # Any-Width Networks
 
-This repository is the official Pytorch implementation of [Any-Width Network](http://openaccess.thecvf.com/content_CVPRW_2020/html/w40/Vu_Any-Width_Networks_CVPRW_2020_paper.html), a real-time adjustable-width CNN architecture that provides maximally fine-grained speed-accuracy trade-off during inference. More information can be found in our [CVPRW 2020 paper](http://openaccess.thecvf.com/content_CVPRW_2020/html/w40/Vu_Any-Width_Networks_CVPRW_2020_paper.html).
+This repository is the official Pytorch implementation of [Any-Width Network](http://openaccess.thecvf.com/content_CVPRW_2020/html/w40/Vu_Any-Width_Networks_CVPRW_2020_paper.html), a real-time adjustable-width CNN architecture that provides maximally fine-grained speed-accuracy trade-off during inference. 
+For more information, please check out our CVPRW 2020 [paper](http://openaccess.thecvf.com/content_CVPRW_2020/html/w40/Vu_Any-Width_Networks_CVPRW_2020_paper.html) and [presentation](https://youtu.be/GdQwDiLj2RM).
 
 <div align="center">
   <img src="https://lh3.googleusercontent.com/pw/ACtC-3f5hZ1Pw180NelSU2M7KXk618GjOzkkpH3U1ihMpkiuqLEipBvaef6aA_Tj9nyuxN42Er5L829Pjo-m6puAi5D1he8iI4VIUxJZ5iRM80c7QAB_vOOqhmkS6qwa5yVzLCrvdBkysG6J2FZEB47Me_hF=w1280-h618-no?authuser=2" width="850" />
